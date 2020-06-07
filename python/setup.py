@@ -4,7 +4,7 @@ setup(
     name="HelloWorld",
     version="0.1",
     packages=find_packages(),
-    package_data={'': ['*.txt']},
+    data-files=[('.'::['text.txt'])],
     include_package_data=True,
     use_scm_version = {
         "root": "..",
