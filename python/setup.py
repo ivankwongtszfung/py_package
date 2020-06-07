@@ -1,9 +1,11 @@
 from setuptools import setup, find_packages
+print(__file__)
 setup(
     name="HelloWorld",
     version="0.1",
     packages=find_packages(),
     package_data={'': ['*.txt']},
+    include_package_data=True,
     use_scm_version = {
         "root": "..",
         "relative_to": __file__,
